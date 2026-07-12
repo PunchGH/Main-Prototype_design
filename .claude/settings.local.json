@@ -1,0 +1,12 @@
+{
+  "skillOverrides": {
+    "data-analyst": "off",
+    "it-operations": "off",
+    "qa": "off"
+  },
+  "permissions": {
+    "allow": [
+      "Bash(npx skills *)"
+    ]
+  }
+}
