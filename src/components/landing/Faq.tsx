@@ -7,11 +7,11 @@ import { scrollToForm } from "./scrollToForm";
 const FAQS = [
   {
     q: "How much will my project cost?",
-    a: "It depends on scope, but you'll never be surprised. After a free site visit we send a fixed, itemized quote — and that's the price you pay. Most homeowners are surprised how transparent it is.",
+    a: "It depends on scope, but you'll never be surprised. After a free site visit we send a fixed, itemized quote, and that's the price you pay. Most homeowners are surprised how transparent it is.",
   },
   {
     q: "How long does a build take?",
-    a: "A kitchen remodel runs 4–8 weeks; a full custom home 6–12 months. We give you a realistic schedule up front and hit it — 100% on-time record across 540+ projects.",
+    a: "A kitchen remodel runs 4–8 weeks; a full custom home 6–12 months. We give you a realistic schedule up front and hit it. We hold a 100% on-time record across 540+ projects.",
   },
   {
     q: "Are you licensed and insured?",
@@ -19,11 +19,11 @@ const FAQS = [
   },
   {
     q: "Do you handle permits?",
-    a: "Yes — we manage all drawings, permit applications and inspections in-house. You don't chase paperwork or city offices; that's our job.",
+    a: "Yes. We manage all drawings, permit applications, and inspections in-house. You don't chase paperwork or city offices; that's our job.",
   },
   {
     q: "What if it goes over budget?",
-    a: "Our fixed-price guarantee means the quote holds. Costs only change if you request a change — and we'll always get your written sign-off before anything moves.",
+    a: "Our fixed-price guarantee means the quote holds. Costs only change if you request a change, and we'll always get your written sign-off before anything moves.",
   },
   {
     q: "Do you offer a warranty?",

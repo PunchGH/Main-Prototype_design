@@ -3,7 +3,7 @@ import styles from "./landing.module.css";
 const REVIEWS = [
   {
     quote:
-      "“They tore out and rebuilt our kitchen in the timeline they promised — to the day. The fixed price never budged. I've already referred two neighbors.”",
+      "“They tore out and rebuilt our kitchen in the timeline they promised, to the day. The fixed price never budged. I've already referred two neighbors.”",
     name: "Marcus D.",
     meta: "Kitchen remodel · Google · 2 months ago",
   },

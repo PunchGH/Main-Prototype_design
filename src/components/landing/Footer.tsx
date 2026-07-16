@@ -11,7 +11,7 @@ export default function Footer() {
           </div>
           <p className={styles.footerText}>
             Residential &amp; commercial construction done right the first time. Licensed,
-            insured, and on time — for 20 years.
+            insured, and on time for 20 years.
           </p>
         </div>
         <div>

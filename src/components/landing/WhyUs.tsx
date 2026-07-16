@@ -8,7 +8,7 @@ const FEATURES = [
   },
   {
     title: "In-house crews",
-    text: "Our own carpenters and site leads — not the cheapest sub of the week. Consistent quality, every job.",
+    text: "Our own carpenters and site leads, not the cheapest sub of the week. Consistent quality on every job.",
   },
   {
     title: "One project manager",

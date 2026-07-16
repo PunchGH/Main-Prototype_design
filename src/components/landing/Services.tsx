@@ -7,7 +7,7 @@ const SERVICES = [
     title: "New Home Builds",
     image: "/images/services-new-home.jpg",
     alt: "New home under construction with wooden framing",
-    text: "Custom, ground-up homes built to your plans and your budget — permits, framing, finishes and all.",
+    text: "Custom, ground-up homes built to your plans and your budget, including permits, framing, and finishes.",
   },
   {
     title: "Renovations & Remodels",
@@ -25,7 +25,7 @@ const SERVICES = [
     title: "General Contracting",
     image: "/images/services-foreman.jpg",
     alt: "Foreman reviewing building plans",
-    text: "Full project management — one dedicated point of contact coordinating every trade on your build.",
+    text: "Full project management, with one dedicated point of contact coordinating every trade on your build.",
   },
 ];
 
@@ -38,7 +38,7 @@ export default function Services() {
           <h2 className={styles.sectionHeading}>Four ways we put a roof over your head</h2>
         </div>
         <p className={styles.sectionLede}>
-          One accountable team from foundation to final walkthrough — no juggling a dozen
+          One accountable team from foundation to final walkthrough. No juggling a dozen
           subcontractors.
         </p>
       </div>
@@ -58,7 +58,7 @@ export default function Services() {
               <h3 className={styles.cardTitle}>{s.title}</h3>
               <p className={styles.cardText}>{s.text}</p>
               <button className={styles.cardLink} onClick={scrollToForm}>
-                Learn more →
+                Get a quote →
               </button>
             </div>
           </div>

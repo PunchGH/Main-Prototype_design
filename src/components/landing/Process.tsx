@@ -7,28 +7,28 @@ const STEPS = [
     title: "Free Quote",
     image: "/images/process-quote.jpg",
     alt: "Two professionals shaking hands over a consultation",
-    text: "Tell us about your project. We visit, listen, and send a clear, itemized quote — no pressure.",
+    text: "Tell us about your project. We visit, listen, and send a clear, itemized quote. No pressure.",
   },
   {
     num: "02",
     title: "Design & Plan",
     image: "/images/process-design.jpg",
     alt: "Architectural floor plans laid out on a table",
-    text: "We lock the scope, drawings, materials and schedule — and handle every permit for you.",
+    text: "We lock the scope, drawings, materials, and schedule, then handle every permit for you.",
   },
   {
     num: "03",
     title: "We Build",
     image: "/images/process-build.jpg",
     alt: "Construction workers building a wooden house frame",
-    text: "Our in-house crew gets to work — with daily photo updates so you're never left guessing.",
+    text: "Our in-house crew gets to work, with daily photo updates so you're never left guessing.",
   },
   {
     num: "04",
     title: "Walkthrough",
     image: "/images/process-walkthrough.jpg",
     alt: "Person handing over keys to a new home",
-    text: "We walk every detail together, fix any punch-list item, and hand over the keys — warranty included.",
+    text: "We walk every detail together, fix any punch-list item, and hand over the keys. Warranty included.",
   },
 ];
 

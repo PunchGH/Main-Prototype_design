@@ -4,7 +4,7 @@ import { scrollToForm } from "./scrollToForm";
 export default function PreFooterCta() {
   return (
     <>
-      <div className={styles.preFooterText}>Ready when you are — quotes are free.</div>
+      <div className={styles.preFooterText}>Ready when you are. Quotes are free.</div>
       <button className={`${styles.btn} ${styles.preFooterBtn}`} onClick={scrollToForm}>
         Get my free quote →
       </button>

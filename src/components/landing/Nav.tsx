@@ -24,7 +24,7 @@ export default function Nav() {
       </div>
       <div className={styles.navCtaContainer}>
         <button className={`${styles.btn} ${styles.navCta}`} onClick={scrollToForm}>
-          Get a free quote →
+          Get my free quote →
         </button>
       </div>
     </nav>

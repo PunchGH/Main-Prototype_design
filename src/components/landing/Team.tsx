@@ -17,8 +17,8 @@ export default function Team() {
         <div className={styles.eyebrow}>06 — THE PEOPLE</div>
         <h2 className={styles.teamHeading}>Real people, on every job</h2>
         <p className={styles.teamText}>
-          No faceless call center. You&apos;ll meet your project lead before you sign anything —
-          and work alongside licensed architects, structural engineers and vetted trade partners.
+          No faceless call center. You&apos;ll meet your project lead before you sign anything,
+          and you&apos;ll work alongside licensed architects, structural engineers, and vetted trade partners.
         </p>
       </div>
       <div className={styles.teamGrid}>

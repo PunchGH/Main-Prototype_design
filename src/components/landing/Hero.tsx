@@ -20,8 +20,8 @@ export default function Hero() {
           We build it right the <span className={styles.heroTitleAccent}>first time.</span>
         </h1>
         <p className={styles.heroSub}>
-          Ground-up homes, full renovations and commercial builds — delivered on schedule, on
-          budget, and inspection-ready. No surprises, no runaround.
+          Ground-up homes, full renovations, and commercial builds. Delivered on schedule, on
+          budget, and inspection-ready. No surprises. No runaround.
         </p>
         <div className={styles.heroActions}>
           <button className={`${styles.btn} ${styles.heroPrimaryBtn}`} onClick={scrollToForm}>

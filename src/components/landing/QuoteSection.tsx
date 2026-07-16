@@ -36,7 +36,7 @@ export default function QuoteSection() {
         </h2>
         <p className={styles.quoteLede}>
           Send us the basics and we&apos;ll come back within one business day with next steps and
-          a clear, itemized quote. Free, and no obligation.
+          a clear, itemized quote. Free, no obligation.
         </p>
         <div className={styles.quotePoints}>
           <div className={styles.quotePoint}>
@@ -116,7 +116,7 @@ export default function QuoteSection() {
           <div className={styles.successIcon}>✓</div>
           <h3 className={styles.successTitle}>Quote request received</h3>
           <p className={styles.successText}>
-            Thanks — we&apos;ve got it. A project lead will reach out within one business day.
+            Thanks, we&apos;ve got it. A project lead will reach out within one business day.
             Keep an eye on your inbox.
           </p>
         </div>
