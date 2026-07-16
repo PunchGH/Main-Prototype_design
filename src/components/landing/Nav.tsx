@@ -21,6 +21,8 @@ export default function Nav() {
         <a href="#reviews" className={styles.navLink}>
           Reviews
         </a>
+      </div>
+      <div className={styles.navCtaContainer}>
         <button className={`${styles.btn} ${styles.navCta}`} onClick={scrollToForm}>
           Get a free quote →
         </button>

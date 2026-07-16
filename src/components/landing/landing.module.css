@@ -92,9 +92,9 @@
   position: sticky;
   top: 0;
   z-index: 60;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
-  justify-content: space-between;
   padding: 0 48px;
   height: 66px;
   background: rgba(250, 248, 244, 0.9);
@@ -106,6 +106,7 @@
   display: flex;
   align-items: center;
   gap: 12px;
+  justify-self: start;
 }
 
 .navMark {
@@ -133,12 +134,19 @@
   display: flex;
   align-items: center;
   gap: 32px;
+  justify-self: center;
 }
 
 .navLink {
   color: rgba(28, 26, 22, 0.72);
   font-weight: 600;
   font-size: 14px;
+}
+
+.navCtaContainer {
+  display: flex;
+  justify-content: flex-end;
+  justify-self: end;
 }
 
 .navCta {
@@ -385,9 +393,20 @@
 }
 
 .trustLogo {
-  height: 34px;
-  width: 120px;
-  font-size: 9px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  color: rgba(28, 26, 22, 0.45);
+  transition: color 0.25s ease;
+}
+
+.trustLogo:hover {
+  color: var(--accent);
+}
+
+.trustLogoSvg {
+  height: 100%;
+  width: auto;
 }
 
 /* ============ generic section ============ */

@@ -58,7 +58,7 @@ export default function Services() {
               <h3 className={styles.cardTitle}>{s.title}</h3>
               <p className={styles.cardText}>{s.text}</p>
               <button className={styles.cardLink} onClick={scrollToForm}>
-                Request a quote →
+                Learn more →
               </button>
             </div>
           </div>

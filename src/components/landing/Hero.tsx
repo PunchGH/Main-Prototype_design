@@ -31,26 +31,7 @@ export default function Hero() {
             See our work
           </a>
         </div>
-        <div className={styles.heroBadges}>
-          <div className={styles.heroBadge}>
-            <div className={styles.heroBadgeIcon}>
-              <div className={styles.heroBadgeIconInner}>✓</div>
-            </div>
-            <div>
-              <div className={styles.heroBadgeTitle}>Licensed &amp; Insured</div>
-              <div className={styles.heroBadgeSub}>LIC #CB-408817</div>
-            </div>
-          </div>
-          <div className={styles.heroBadge}>
-            <div className={styles.heroBadgeIcon}>
-              <div className={styles.heroBadgeIconInner}>◈</div>
-            </div>
-            <div>
-              <div className={styles.heroBadgeTitle}>Bonded Contractor</div>
-              <div className={styles.heroBadgeSub}>SURETY BACKED · EST. 2005</div>
-            </div>
-          </div>
-        </div>
+
       </div>
 
       <div className={styles.heroStats}>
