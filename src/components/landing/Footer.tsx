@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./landing.module.css";
 
 export default function Footer() {
@@ -17,10 +18,10 @@ export default function Footer() {
         <div>
           <div className={styles.footerColLabel}>EXPLORE</div>
           <div className={styles.footerLinks}>
-            <a href="#services">Services</a>
-            <a href="#process">Process</a>
-            <a href="#gallery">Projects</a>
-            <a href="#reviews">Reviews</a>
+            <Link href="/services">Services</Link>
+            <Link href="/#process">Process</Link>
+            <Link href="/#gallery">Projects</Link>
+            <Link href="/#reviews">Reviews</Link>
           </div>
         </div>
         <div>

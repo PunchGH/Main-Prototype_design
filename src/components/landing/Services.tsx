@@ -1,28 +1,32 @@
 import Image from "next/image";
+import Link from "next/link";
 import styles from "./landing.module.css";
-import { scrollToForm } from "./scrollToForm";
 
 const SERVICES = [
   {
     title: "New Home Builds",
+    slug: "new-home-builds",
     image: "/images/services-new-home.jpg",
     alt: "New home under construction with wooden framing",
     text: "Custom, ground-up homes built to your plans and your budget, including permits, framing, and finishes.",
   },
   {
     title: "Renovations & Remodels",
+    slug: "renovations-and-remodels",
     image: "/images/services-kitchen.jpg",
     alt: "Renovated modern kitchen interior",
     text: "Kitchens, baths, additions and whole-home transformations that respect your space and timeline.",
   },
   {
     title: "Commercial Construction",
+    slug: "commercial-construction",
     image: "/images/services-commercial.jpg",
     alt: "Modern commercial building exterior",
     text: "Retail, office and multi-unit buildouts delivered to code, on schedule, with minimal downtime.",
   },
   {
     title: "General Contracting",
+    slug: "general-contracting",
     image: "/images/services-foreman.jpg",
     alt: "Foreman reviewing building plans",
     text: "Full project management, with one dedicated point of contact coordinating every trade on your build.",
@@ -57,9 +61,9 @@ export default function Services() {
             <div className={styles.cardBody}>
               <h3 className={styles.cardTitle}>{s.title}</h3>
               <p className={styles.cardText}>{s.text}</p>
-              <button className={styles.cardLink} onClick={scrollToForm}>
-                Get a quote →
-              </button>
+              <Link href={`/services/${s.slug}`} className={styles.cardLink}>
+                Learn more →
+              </Link>
             </div>
           </div>
         ))}

@@ -1,26 +1,29 @@
+"use client";
+
+import Link from "next/link";
 import styles from "./landing.module.css";
 import { scrollToForm } from "./scrollToForm";
 
 export default function Nav() {
   return (
     <nav className={styles.nav}>
-      <div className={styles.navBrand}>
+      <Link href="/" className={styles.navBrand}>
         <div className={styles.navMark}>N</div>
         <span className={styles.navName}>NORTHFORGE</span>
-      </div>
+      </Link>
       <div className={styles.navLinks}>
-        <a href="#services" className={styles.navLink}>
+        <Link href="/services" className={styles.navLink}>
           Services
-        </a>
-        <a href="#process" className={styles.navLink}>
+        </Link>
+        <Link href="/#process" className={styles.navLink}>
           Process
-        </a>
-        <a href="#gallery" className={styles.navLink}>
+        </Link>
+        <Link href="/#gallery" className={styles.navLink}>
           Projects
-        </a>
-        <a href="#reviews" className={styles.navLink}>
+        </Link>
+        <Link href="/#reviews" className={styles.navLink}>
           Reviews
-        </a>
+        </Link>
       </div>
       <div className={styles.navCtaContainer}>
         <button className={`${styles.btn} ${styles.navCta}`} onClick={scrollToForm}>
