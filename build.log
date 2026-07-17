@@ -10,3 +10,24 @@
   Finished TypeScript in 31.2s ...
   Collecting page data using 7 workers ...
   Generating static pages using 7 workers (0/9) ...
+  Generating static pages using 7 workers (2/9) 
+  Generating static pages using 7 workers (4/9) 
+  Generating static pages using 7 workers (6/9) 
+✓ Generating static pages using 7 workers (9/9) in 23.7s
+  Finalizing page optimization ...
+
+Route (app)
+┌ ○ /
+├ ○ /_not-found
+├ ○ /services
+└ ● /services/[slug]
+  ├ /services/new-home-builds
+  ├ /services/renovations-and-remodels
+  ├ /services/commercial-construction
+  └ /services/general-contracting
+
+
+○  (Static)  prerendered as static content
+●  (SSG)     prerendered as static HTML (uses generateStaticParams)
+
+REAL_EXIT=0

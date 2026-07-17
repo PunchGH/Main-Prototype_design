@@ -183,44 +183,47 @@ export const getService = (slug: string) => SERVICES.find(s => s.slug === slug);
 
 Resumable across chats/agents. Mark `[x]` as each lands.
 
+**IMPLEMENTED 2026-07-16 — build passes (exit 0), TypeScript clean, all 5 routes prerender. Runtime/visual browser pass still recommended (see Phase F).**
+
 ### Phase A — Decisions & setup
-- [ ] Read the Next.js docs listed in §0 (mandatory)
-- [ ] Confirm architecture: data-driven `[slug]` route (vs. 4 static folders)
+- [x] Read the Next.js docs listed in §0 (layouts-and-pages, dynamic-routes, generate-metadata, not-found)
+- [x] Confirm architecture: data-driven `[slug]` route (vs. 4 static folders)
 - [x] Confirm slugs (§1) and `/services` index → **build it**
 - [x] Confirm process section → **reuse shared 4-step process**
-- [ ] Confirm draft copy in §6
+- [x] Confirm draft copy in §6
 
 ### Phase B — Data + content
-- [ ] Create `src/data/services.ts` (type + `getService` + 4 entries)
-- [ ] Fill copy for all 4 (H1, intro, included, gallery, faqs, related, meta)
+- [x] Create `src/data/services.ts` (type + `getService` + 4 entries)
+- [x] Fill copy for all 4 (H1, intro, included, gallery, faqs, related, meta)
 
 ### Phase C — Route + template
-- [ ] `src/components/services/ServicePage.tsx` template (reuses Nav/Footer/QuoteSection/StickyBar/Reveal)
-- [ ] `src/components/services/services.module.css` (only styles not already in `landing.module.css`)
-- [ ] `src/app/services/[slug]/page.tsx` with `generateStaticParams` + `generateMetadata` + `notFound()` on bad slug
-- [ ] `src/app/services/[slug]/not-found.tsx` (optional)
-- [ ] `src/app/services/page.tsx` index (confirmed — build)
+- [x] `src/components/services/ServicePage.tsx` template (reuses Nav/Footer/QuoteSection/StickyBar/Reveal/Process)
+- [x] `src/components/services/ServiceFaq.tsx` (client accordion, service-specific FAQs)
+- [x] `src/components/services/services.module.css` (only styles not already in `landing.module.css`)
+- [x] `src/app/services/[slug]/page.tsx` with `generateStaticParams` + `generateMetadata` + `notFound()` on bad slug
+- [x] `src/app/services/[slug]/not-found.tsx`
+- [x] `src/app/services/page.tsx` index
 
 ### Phase D — Integration wiring
-- [ ] `Services.tsx`: add `slug`; cards `<Link>` to `/services/<slug>`
-- [ ] `Nav.tsx`: anchors → `/#…` via `<Link>`; brand → `/`; (opt) add Services link
-- [ ] `Footer.tsx`: anchors → `/#…`; (opt) add Services column
-- [ ] Verify every service page includes `<QuoteSection />` so `scrollToForm` (#quote) works
+- [x] `Services.tsx`: add `slug`; cards `<Link>` to `/services/<slug>`
+- [x] `Nav.tsx`: anchors → `/#…` via `<Link>`; brand → `/`; Services link → `/services`; added `"use client"` (now imported by server components)
+- [x] `Footer.tsx`: EXPLORE links → `<Link>` (`/services`, `/#…`)
+- [x] Every service page includes `<QuoteSection />` so `scrollToForm` (#quote) works
 
 ### Phase E — SEO
-- [ ] Per-page title/description via `generateMetadata`
-- [ ] `generateStaticParams` prerenders all 4
-- [ ] (opt) JSON-LD + OG images
+- [x] Per-page title/description + canonical via `generateMetadata`
+- [x] `generateStaticParams` prerenders all 4
+- [ ] (opt) JSON-LD + OG images — deferred
 
 ### Phase F — Verify
-- [ ] `npm run lint` clean
-- [ ] `npm run build` succeeds; all 4 routes + `/services` prerender
-- [ ] Each `/services/<slug>` renders; hero image + copy correct
-- [ ] Homepage service cards navigate to correct pages
-- [ ] Nav/Footer anchor links work **from a sub-page** (land on homepage sections)
-- [ ] CTAs on service pages scroll to the quote form
-- [ ] Unknown slug (e.g. `/services/foo`) shows not-found
-- [ ] Mobile pass: no horizontal scroll, images responsive
+- [x] `npm run lint` clean (exit 0)
+- [x] `npm run build` succeeds; all 4 service routes + `/services` + not-found prerender
+- [ ] Each `/services/<slug>` renders; hero image + copy correct _(needs browser)_
+- [ ] Homepage service cards navigate to correct pages _(needs browser)_
+- [ ] Nav/Footer anchor links work **from a sub-page** (land on homepage sections) _(needs browser)_
+- [ ] CTAs on service pages scroll to the quote form _(needs browser)_
+- [ ] Unknown slug (e.g. `/services/foo`) shows not-found _(needs browser)_
+- [ ] Mobile pass: no horizontal scroll, images responsive _(needs browser)_
 
 ---
 
