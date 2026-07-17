@@ -271,17 +271,51 @@
 }
 
 /* ============ responsive ============ */
-@media (max-width: 860px) {
+@media (max-width: 1023px) {
   .heroContent {
-    padding: 100px 28px 44px;
+    padding: 100px 32px 44px;
   }
-
   .title {
-    font-size: 46px;
+    font-size: 54px;
   }
-
   .overviewGrid {
     grid-template-columns: 1fr;
     gap: 36px;
+  }
+  .workGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .relatedGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .indexGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .heroContent {
+    padding: 80px 20px 32px;
+  }
+  .title {
+    font-size: 36px;
+  }
+  .sub {
+    font-size: 16px;
+  }
+  .actions {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+  .workGrid {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 200px;
+  }
+  .relatedGrid {
+    grid-template-columns: 1fr;
+  }
+  .indexGrid {
+    grid-template-columns: 1fr;
   }
 }
